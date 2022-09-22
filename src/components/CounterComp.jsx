@@ -36,7 +36,7 @@ function CounterComp() {
             </div>
             <div>
                 <button type="submit" onClick={() => {
-                    dispatch(addAmount(Number(num.current.value)));
+                    !formik.errors.num && dispatch(addAmount(Number(num.current.value)));
                     formik.handleSubmit()
                 }}>Aumenta di</button>
                 <input ref={num} type="number" name="num" id="num" min="0" onChange={formik.handleChange} value={formik.values.num} />

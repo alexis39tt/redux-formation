@@ -3,3 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.countercomp{
+  margin: 200px auto;
+  position: relative;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.countercomp input{
+  width: 70px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.countercomp button{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.res{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  font-size: 5rem;
+}

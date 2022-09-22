@@ -1,9 +1,9 @@
-import { useState } from "react";
+import CounterComp from "./components/CounterComp";
 
 function App() {
-  const [name, setName] = useState("anonymous")
   return (
     <div className="App">
+      <CounterComp />
     </div>
   );
 }

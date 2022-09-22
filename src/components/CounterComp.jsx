@@ -27,20 +27,20 @@ function CounterComp() {
     const dispatch = useDispatch();
 
     return (
-        <div className="countercomp">
+        <div className="countercomp card shadow-lg bg-white">
             <div>
-                <button onClick={() => dispatch(increment())}>Aumenta</button>
+                <button className="btn btn-outline-primary" onClick={() => dispatch(increment())}>Aumenta</button>
             </div>
             <div>
-                <button onClick={() => dispatch(decrement())}>Diminuisci</button>
+                <button className="btn btn-outline-primary" onClick={() => dispatch(decrement())}>Diminuisci</button>
             </div>
-            <div>
-                <button type="submit" onClick={() => {
+            <div className="btns">
+                <button className="btn btn-primary" type="submit" onClick={() => {
                     !formik.errors.num && dispatch(addAmount(Number(num.current.value)));
                     formik.handleSubmit()
                 }}>Aumenta di</button>
-                <input ref={num} type="number" name="num" id="num" min="0" onChange={formik.handleChange} value={formik.values.num} />
-                {formik.errors.num && <p className="error">{formik.errors.num}</p>}
+                <input ref={num} className="input-number" type="number" name="num" id="num" min="0" onChange={formik.handleChange} value={formik.values.num} />
+                {formik.errors.num && <div class="alert alert-danger bg-white" role="alert">{formik.errors.num}</div>}
             </div>
             <div className="res">
                 <h1>{count}</h1>

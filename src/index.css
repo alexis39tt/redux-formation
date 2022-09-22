@@ -6,33 +6,28 @@
 }
 
 .countercomp{
+  flex-direction: row;
+  justify-content: center;
   margin: 200px auto;
-  position: relative;
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
+  width: 1000px !important;
+  height: 250px;
+}
+
+.countercomp div:not(.alert-danger){
+  margin: 20px;
 }
 
 .countercomp input{
-  width: 70px;
-  margin-left: 5px;
-  padding: 10px;
+  margin: 10px 0;
 }
 
-.countercomp button{
-  padding: 10px;
-  cursor: pointer;
+.btns{
+  width: 300px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
-.res{
-  position: absolute;
-  top: 50px;
-  left: 150px;
+.res h1{
   font-size: 5rem;
-}
-
-.error{
-  width: 500px;
-  position: absolute;
-  color: red;
 }

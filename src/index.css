@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .countercomp{
@@ -28,4 +29,10 @@
   top: 50px;
   left: 150px;
   font-size: 5rem;
+}
+
+.error{
+  width: 500px;
+  position: absolute;
+  color: red;
 }
